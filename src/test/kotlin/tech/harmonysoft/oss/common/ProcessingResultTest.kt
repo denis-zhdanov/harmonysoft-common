@@ -51,4 +51,11 @@ class ProcessingResultTest {
         assertThat(to.success).isFalse()
         assertThat(to.failureValue).isEqualTo(error)
     }
+
+    @Test
+    fun `when nullable type is used then it works as expected`() {
+        val result: ProcessingResult<String?, String> = ProcessingResult.success(null)
+        assertThat(result.success).isTrue()
+        assertThat(result.successValue).isNull()
+    }
 }

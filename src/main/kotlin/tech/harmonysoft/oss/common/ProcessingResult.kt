@@ -65,7 +65,7 @@ class ProcessingResult<SUCCESS, FAILURE> private constructor(
 
     companion object {
 
-        fun <S : Any, F> success(value: S): ProcessingResult<S, F> {
+        fun <S, F> success(value: S): ProcessingResult<S, F> {
             return ProcessingResult(value, null)
         }
 
