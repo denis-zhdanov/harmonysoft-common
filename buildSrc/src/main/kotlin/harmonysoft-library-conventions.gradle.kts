@@ -20,6 +20,9 @@ dependencies {
     api("tech.harmonysoft:inpertio-client-jvm:${Version.INPERTIO}")
     api("javax.inject:javax.inject:${Version.INJECT}")
 
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:${Version.Kotlin.COROUTINE}")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-slf4j:${Version.Kotlin.COROUTINE}")
+    implementation("org.jetbrains.kotlin:kotlin-reflect:${Version.Kotlin.REFLECT}")
     implementation("com.google.guava:guava:${Version.GUAVA}")
     implementation("org.springframework.boot:spring-boot-starter")
 
