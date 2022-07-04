@@ -1,4 +1,4 @@
-package tech.harmonysoft.oss.test.event.bus
+package tech.harmonysoft.oss.event.bus
 
 import tech.harmonysoft.oss.inpertio.client.event.ConfigChangedEvent
 

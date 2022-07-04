@@ -1,27 +1,22 @@
-package tech.harmonysoft.oss.test.event.bus
+package tech.harmonysoft.oss.event.bus
 
-import com.google.common.eventbus.EventBus
-import tech.harmonysoft.oss.common.util.mapFirstNotNull
+import tech.harmonysoft.oss.common.collection.mapFirstNotNull
 import javax.annotation.Priority
 import javax.inject.Named
 
 @Priority(Int.MAX_VALUE)
 @Named
 class TestEventBus(
-    private val strategies: Collection<EventProcessingStrategy>
-) : EventBus("test") {
+    private val strategies: Collection<EventProcessingStrategy>,
+    factory: EventBusFactory
+) : EventBus {
 
-    private val sync = EventBus("test-sync-bus")
-    private val async = EventBus("test-async-bus")
+    private val sync = factory.sync()
+    private val async = factory.async()
 
     override fun register(subscriber: Any) {
         sync.register(subscriber)
         async.register(subscriber)
-    }
-
-    override fun unregister(subscriber: Any) {
-        sync.unregister(subscriber)
-        async.unregister(subscriber)
     }
 
     override fun post(event: Any) {

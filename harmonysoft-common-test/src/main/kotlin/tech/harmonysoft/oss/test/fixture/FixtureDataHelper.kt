@@ -1,6 +1,5 @@
 package tech.harmonysoft.oss.test.fixture
 
-import com.google.common.collect.Sets
 import org.slf4j.LoggerFactory
 import tech.harmonysoft.oss.common.di.DiElementsComparatorConfigProvider
 import tech.harmonysoft.oss.common.meta.MetaValueUtil
@@ -8,6 +7,8 @@ import tech.harmonysoft.oss.test.TestAware
 import tech.harmonysoft.oss.test.fixture.meta.function.FixtureMetaFunction
 import tech.harmonysoft.oss.test.fixture.meta.value.FixtureMetaValueMapper
 import tech.harmonysoft.oss.test.util.TestUtil.fail
+import java.util.*
+import java.util.concurrent.ConcurrentHashMap
 import javax.inject.Named
 import javax.inject.Provider
 
@@ -22,7 +23,7 @@ class FixtureDataHelper (
 
     private val logger = LoggerFactory.getLogger(this::class.java)
 
-    private val excludedMetaValues = Sets.newConcurrentHashSet<String>()
+    private val excludedMetaValues = Collections.newSetFromMap(ConcurrentHashMap<String, Boolean>())
 
     @Suppress("UNCHECKED_CAST")
     private val mappersByType: Map<FixtureType<Any>, Collection<FixtureMetaValueMapper<Any>>> by lazy {

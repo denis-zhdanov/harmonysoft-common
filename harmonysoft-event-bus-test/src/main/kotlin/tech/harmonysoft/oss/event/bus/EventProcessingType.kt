@@ -1,4 +1,4 @@
-package tech.harmonysoft.oss.test.event.bus
+package tech.harmonysoft.oss.event.bus
 
 enum class EventProcessingType {
 

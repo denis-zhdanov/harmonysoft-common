@@ -24,10 +24,14 @@ dependencies {
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:${Version.Kotlin.COROUTINE}")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-slf4j:${Version.Kotlin.COROUTINE}")
     implementation("org.jetbrains.kotlin:kotlin-reflect:${Version.Kotlin.REFLECT}")
-    implementation("com.google.guava:guava:${Version.GUAVA}")
     implementation("org.springframework.boot:spring-boot-starter")
 
+    testImplementation("org.springframework.boot:spring-boot-starter-test")
     testImplementation("org.assertj:assertj-core:${Version.ASSERTJ}")
     testImplementation("org.junit.jupiter:junit-jupiter:${Version.JUNIT}")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:${Version.JUNIT}")
+}
+
+tasks.test {
+    useJUnitPlatform()
 }
