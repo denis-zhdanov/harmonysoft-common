@@ -6,7 +6,7 @@ object MetaValueUtil {
 
     private val logger = LoggerFactory.getLogger(this::class.java)
 
-    val DYNAMIC_VALUE_PATTERN = """<([^>]+)>""".toRegex()
+    val DYNAMIC_VALUE_PATTERN = """<([^>]++)>""".toRegex()
 
     /**
      * Extracts meta values from the given string.
