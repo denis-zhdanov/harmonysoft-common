@@ -2,16 +2,16 @@ package tech.harmonysoft.oss.test.fixture
 
 import com.google.common.collect.Sets
 import org.slf4j.LoggerFactory
-import org.springframework.stereotype.Component
 import tech.harmonysoft.oss.common.di.DiElementsComparatorConfigProvider
 import tech.harmonysoft.oss.common.meta.MetaValueUtil
 import tech.harmonysoft.oss.test.TestAware
 import tech.harmonysoft.oss.test.fixture.meta.function.FixtureMetaFunction
 import tech.harmonysoft.oss.test.fixture.meta.value.FixtureMetaValueMapper
 import tech.harmonysoft.oss.test.util.TestUtil.fail
+import javax.inject.Named
 import javax.inject.Provider
 
-@Component
+@Named
 class FixtureDataHelper (
     private val allMappers: Provider<Collection<FixtureMetaValueMapper<*>>>,
     private val comparatorConfigProvider: DiElementsComparatorConfigProvider,

@@ -1,12 +1,12 @@
 package tech.harmonysoft.oss.common.schedule.impl
 
-import org.springframework.stereotype.Component
 import tech.harmonysoft.oss.common.schedule.TaskScheduler
 import tech.harmonysoft.oss.common.schedule.TaskSchedulerFactory
 import tech.harmonysoft.oss.common.time.ClockProvider
 import java.util.concurrent.ScheduledExecutorService
+import javax.inject.Named
 
-@Component
+@Named
 class TaskSchedulerFactoryImpl(
     private val clockProvider: ClockProvider,
     private val threadPool: ScheduledExecutorService

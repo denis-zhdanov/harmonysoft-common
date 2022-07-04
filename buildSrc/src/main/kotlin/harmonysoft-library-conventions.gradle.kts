@@ -18,7 +18,8 @@ tasks.getByName("bootJar").enabled = false
 
 dependencies {
     api("tech.harmonysoft:inpertio-client-jvm:${Version.INPERTIO}")
-    api("javax.inject:javax.inject:${Version.INJECT}")
+    api("javax.inject:javax.inject:${Version.JAVAX_INJECT}")
+    api("javax.annotation:javax.annotation-api:${Version.JAVAX_ANNOTATION}")
 
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:${Version.Kotlin.COROUTINE}")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-slf4j:${Version.Kotlin.COROUTINE}")

@@ -1,14 +1,14 @@
 package tech.harmonysoft.oss.test.time
 
-import org.springframework.context.annotation.Primary
-import org.springframework.stereotype.Component
 import tech.harmonysoft.oss.common.time.ClockProvider
 import tech.harmonysoft.oss.test.TestAware
 import java.time.Clock
 import java.time.ZoneId
+import javax.annotation.Priority
+import javax.inject.Named
 
-@Primary
-@Component
+@Priority(Int.MAX_VALUE)
+@Named
 class TestClockProvider : ClockProvider, TestAware {
 
     private val clock = TestClock()

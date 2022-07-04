@@ -1,11 +1,11 @@
 package tech.harmonysoft.oss.test.fixture
 
-import org.springframework.stereotype.Component
 import tech.harmonysoft.oss.common.ProcessingResult
 import tech.harmonysoft.oss.test.binding.DynamicBindingContext
 import tech.harmonysoft.oss.test.binding.DynamicBindingKey
 import tech.harmonysoft.oss.test.binding.DynamicBindingUtil.DYNAMIC_BOUND_VALUE_REGEX
 import tech.harmonysoft.oss.test.fixture.meta.value.FixtureMetaValueMapper
+import javax.inject.Named
 
 /**
  * There are use-cases when some values are generated during test execution, e.g. unique ids.
@@ -36,7 +36,7 @@ import tech.harmonysoft.oss.test.fixture.meta.value.FixtureMetaValueMapper
  *
  * This class resolves such bindings using [DynamicBindingContext]
  */
-@Component
+@Named
 class DynamicBoundValueMapper(
     private val bindingContext: DynamicBindingContext
 ) : FixtureMetaValueMapper<Any> {

@@ -1,10 +1,10 @@
 package tech.harmonysoft.oss.common.time
 
-import org.springframework.stereotype.Component
 import java.time.Clock
 import java.time.ZoneId
+import javax.inject.Named
 
-@Component
+@Named
 class ClockProviderImpl : ClockProvider {
 
     private val delegate: ClockProvider by lazy {

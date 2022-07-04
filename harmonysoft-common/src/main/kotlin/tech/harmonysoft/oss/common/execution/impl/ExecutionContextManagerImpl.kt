@@ -1,16 +1,16 @@
 package tech.harmonysoft.oss.common.execution.impl
 
-import org.springframework.stereotype.Component
-import tech.harmonysoft.oss.common.execution.ExecutionContextManager
-import java.util.*
-import kotlin.coroutines.CoroutineContext
 import kotlinx.coroutines.asContextElement
 import kotlinx.coroutines.slf4j.MDCContext
 import org.slf4j.MDC
 import tech.harmonysoft.oss.common.collection.CollectionInitializer
+import tech.harmonysoft.oss.common.execution.ExecutionContextManager
 import tech.harmonysoft.oss.common.reflection.TypeUtil.PRIMITIVES
+import java.util.*
+import javax.inject.Named
+import kotlin.coroutines.CoroutineContext
 
-@Component
+@Named
 class ExecutionContextManagerImpl : ExecutionContextManager {
 
     private val context = ThreadLocal.withInitial { mutableMapOf<String, Stack<Any>>() }

@@ -1,12 +1,12 @@
 package tech.harmonysoft.oss.test.event.bus
 
 import com.google.common.eventbus.EventBus
-import org.springframework.context.annotation.Primary
-import org.springframework.stereotype.Component
 import tech.harmonysoft.oss.common.util.mapFirstNotNull
+import javax.annotation.Priority
+import javax.inject.Named
 
-@Primary
-@Component
+@Priority(Int.MAX_VALUE)
+@Named
 class TestEventBus(
     private val strategies: Collection<EventProcessingStrategy>
 ) : EventBus("test") {

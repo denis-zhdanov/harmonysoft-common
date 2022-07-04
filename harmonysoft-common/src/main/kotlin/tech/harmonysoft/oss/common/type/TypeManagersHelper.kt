@@ -1,9 +1,9 @@
 package tech.harmonysoft.oss.common.type
 
-import org.springframework.stereotype.Component
+import javax.inject.Named
 import kotlin.reflect.KClass
 
-@Component
+@Named
 class TypeManagersHelper(
     _managers: Collection<TypeManager<*>>
 ) {

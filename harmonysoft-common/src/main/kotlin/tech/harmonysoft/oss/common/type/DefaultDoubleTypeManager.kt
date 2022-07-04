@@ -1,9 +1,9 @@
 package tech.harmonysoft.oss.common.type
 
-import org.springframework.stereotype.Component
 import tech.harmonysoft.oss.common.number.NumberUtil
+import javax.inject.Named
 
-@Component
+@Named
 class DefaultDoubleTypeManager : TypeManager<Double> {
 
     override val targetType = Double::class

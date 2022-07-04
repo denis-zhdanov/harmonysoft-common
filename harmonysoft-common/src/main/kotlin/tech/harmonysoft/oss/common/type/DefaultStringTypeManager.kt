@@ -1,8 +1,8 @@
 package tech.harmonysoft.oss.common.type
 
-import org.springframework.stereotype.Component
+import javax.inject.Named
 
-@Component
+@Named
 class DefaultStringTypeManager : TypeManager<String> {
 
     override val targetType = String::class

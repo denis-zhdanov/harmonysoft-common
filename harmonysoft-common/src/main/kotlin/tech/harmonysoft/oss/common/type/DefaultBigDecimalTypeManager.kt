@@ -1,10 +1,10 @@
 package tech.harmonysoft.oss.common.type
 
-import org.springframework.stereotype.Component
 import tech.harmonysoft.oss.common.number.NumberUtil
 import java.math.BigDecimal
+import javax.inject.Named
 
-@Component
+@Named
 class DefaultBigDecimalTypeManager : TypeManager<BigDecimal> {
 
     override val targetType = BigDecimal::class

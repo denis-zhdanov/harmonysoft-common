@@ -7,7 +7,8 @@ object Version {
         const val REFLECT = "1.7.0"
     }
 
-    const val INJECT = "1"
+    const val JAVAX_ANNOTATION = "1.3.2"
+    const val JAVAX_INJECT = "1"
     const val INPERTIO = "1.0.0"
     const val GUAVA = "31.1-jre" // TODO den remove
     const val JACKSON = "2.12.7"

@@ -1,6 +1,5 @@
 package tech.harmonysoft.oss.test.fixture.meta.value
 
-import org.springframework.stereotype.Component
 import tech.harmonysoft.oss.common.ProcessingResult
 import tech.harmonysoft.oss.common.ProcessingResult.Companion.failure
 import tech.harmonysoft.oss.common.ProcessingResult.Companion.success
@@ -8,8 +7,9 @@ import tech.harmonysoft.oss.common.meta.MetaValueMapper
 import tech.harmonysoft.oss.test.fixture.CommonTestFixture
 import java.net.ServerSocket
 import java.nio.file.Files
+import javax.inject.Named
 
-@Component
+@Named
 class CommonFixtureMetaValueMapper : FixtureMetaValueMapper<Any>, MetaValueMapper {
 
     override val type = CommonTestFixture.TYPE

@@ -1,11 +1,11 @@
 package tech.harmonysoft.oss.test.binding
 
 import org.slf4j.LoggerFactory
-import org.springframework.stereotype.Component
 import tech.harmonysoft.oss.test.util.TestUtil.fail
 import java.util.concurrent.ConcurrentHashMap
+import javax.inject.Named
 
-@Component
+@Named
 class DynamicBindingContext {
 
     private val bindings = ConcurrentHashMap<DynamicBindingKey, Any?>()

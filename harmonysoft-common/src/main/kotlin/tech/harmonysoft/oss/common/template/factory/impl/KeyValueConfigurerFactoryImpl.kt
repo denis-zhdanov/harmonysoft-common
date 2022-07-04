@@ -1,6 +1,5 @@
 package tech.harmonysoft.oss.common.template.factory.impl
 
-import org.springframework.stereotype.Component
 import tech.harmonysoft.oss.common.data.TypedKeyManager
 import tech.harmonysoft.oss.common.meta.MetaValueUtil.DYNAMIC_VALUE_PATTERN
 import tech.harmonysoft.oss.common.template.factory.KeyValueConfigurerFactory
@@ -17,8 +16,9 @@ import tech.harmonysoft.oss.common.template.factory.impl.provider.ValueProvider
 import tech.harmonysoft.oss.common.template.service.KeyValueConfigurer
 import tech.harmonysoft.oss.common.type.TypeManagerContext
 import tech.harmonysoft.oss.common.type.TypeManagersHelper
+import javax.inject.Named
 
-@Component
+@Named
 class KeyValueConfigurerFactoryImpl(
     private val typeManagersHelper: TypeManagersHelper
 ) : KeyValueConfigurerFactory {
