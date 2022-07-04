@@ -1,1 +1,1 @@
-## Test event bus extension which allows to dispatch events either synchronously or asynchronously
+## Test event bus implementation which allows to dispatch events synchronously or asynchronously

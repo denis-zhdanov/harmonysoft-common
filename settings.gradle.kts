@@ -1,8 +1,8 @@
 rootProject.name = "harmonysoft-libs"
 
 include("harmonysoft-common")
+include("harmonysoft-common-spring")
 include("harmonysoft-common-test")
-include("harmonysoft-spring")
 include("harmonysoft-common-spring-test")
 
 include("harmonysoft-event-bus-api")

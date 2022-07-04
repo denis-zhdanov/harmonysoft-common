@@ -3,7 +3,7 @@ plugins {
 }
 
 dependencies {
-    api(project(":harmonysoft-spring"))
+    api(project(":harmonysoft-common-spring"))
     api(project(":harmonysoft-common-test"))
 
     implementation("org.junit.jupiter:junit-jupiter:${Version.JUNIT}")
