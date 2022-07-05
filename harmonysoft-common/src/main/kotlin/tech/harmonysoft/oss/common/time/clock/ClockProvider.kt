@@ -1,4 +1,4 @@
-package tech.harmonysoft.oss.common.time
+package tech.harmonysoft.oss.common.time.clock
 
 import tech.harmonysoft.oss.inpertio.client.ConfigProvider
 import java.time.Clock

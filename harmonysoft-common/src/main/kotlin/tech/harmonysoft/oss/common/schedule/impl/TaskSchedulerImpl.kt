@@ -3,7 +3,7 @@ package tech.harmonysoft.oss.common.schedule.impl
 import org.slf4j.LoggerFactory
 import tech.harmonysoft.oss.common.schedule.ScheduledTask
 import tech.harmonysoft.oss.common.schedule.TaskScheduler
-import tech.harmonysoft.oss.common.time.ClockProvider
+import tech.harmonysoft.oss.common.time.clock.ClockProvider
 import java.time.LocalDateTime
 import java.time.temporal.ChronoField
 import java.util.*

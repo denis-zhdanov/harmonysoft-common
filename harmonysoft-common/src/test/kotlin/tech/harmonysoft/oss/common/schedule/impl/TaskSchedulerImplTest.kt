@@ -8,7 +8,7 @@ import org.quartz.CronExpression
 import org.slf4j.LoggerFactory
 import tech.harmonysoft.oss.common.schedule.ScheduledTask
 import tech.harmonysoft.oss.common.schedule.TaskScheduler
-import tech.harmonysoft.oss.test.time.TestClockProvider
+import tech.harmonysoft.oss.test.time.clock.TestClockProvider
 import java.time.LocalDate
 import java.time.LocalTime
 import java.util.*

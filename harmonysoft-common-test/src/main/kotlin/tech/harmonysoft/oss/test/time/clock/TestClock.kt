@@ -1,4 +1,4 @@
-package tech.harmonysoft.oss.test.time
+package tech.harmonysoft.oss.test.time.clock
 
 import tech.harmonysoft.oss.test.TestAware
 import java.time.Clock

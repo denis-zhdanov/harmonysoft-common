@@ -2,7 +2,7 @@ package tech.harmonysoft.oss.common.schedule.impl
 
 import tech.harmonysoft.oss.common.schedule.TaskScheduler
 import tech.harmonysoft.oss.common.schedule.TaskSchedulerFactory
-import tech.harmonysoft.oss.common.time.ClockProvider
+import tech.harmonysoft.oss.common.time.clock.ClockProvider
 import java.util.concurrent.ScheduledExecutorService
 import javax.inject.Named
 

@@ -71,6 +71,10 @@ private class ScheduledFutureWrapper<T>(
         return true
     }
 
+    override fun isCancelled(): Boolean {
+        return cancelled.get()
+    }
+
     override fun getDelay(unit: TimeUnit): Long {
         return unit.convert(delayProvider(), timeUnitProvider())
     }

@@ -1,10 +1,11 @@
 package tech.harmonysoft.oss.event.bus
 
 import tech.harmonysoft.oss.common.collection.mapFirstNotNull
+import tech.harmonysoft.oss.common.di.DiConstants
 import javax.annotation.Priority
 import javax.inject.Named
 
-@Priority(Int.MAX_VALUE)
+@Priority(DiConstants.LIB_PRIMARY_PRIORITY)
 @Named
 class TestEventBus(
     private val strategies: Collection<EventProcessingStrategy>,
