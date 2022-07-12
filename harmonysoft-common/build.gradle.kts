@@ -5,7 +5,7 @@ plugins {
 dependencies {
     implementation("org.quartz-scheduler:quartz:2.3.2")
 
-    testImplementation(project(":harmonysoft-common-spring-test"))
+    testImplementation(project(":harmonysoft-common-test-spring"))
 
     testImplementation("com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:${Version.JACKSON}")
 }

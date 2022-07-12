@@ -14,4 +14,5 @@ object Version {
     const val JACKSON = "2.12.7"
     const val ASSERTJ = "3.22.0"
     const val JUNIT = "5.8.2"
+    const val CUCUMBER = "7.4.1"
 }

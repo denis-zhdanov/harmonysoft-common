@@ -15,7 +15,7 @@ import javax.inject.Named
  * * `T + N` - current time minus `N` days, e.g. `T + 1`, `T + 2`, etc
  */
 @Named
-class TimeHelper(
+class TimeSpecHelper(
     private val clockProvider: ClockProvider
 ) {
 

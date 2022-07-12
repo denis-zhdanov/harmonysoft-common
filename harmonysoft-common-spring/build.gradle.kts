@@ -4,4 +4,6 @@ plugins {
 
 dependencies {
     api(project(":harmonysoft-common"))
+
+    testImplementation(project(":harmonysoft-common-test"))
 }
