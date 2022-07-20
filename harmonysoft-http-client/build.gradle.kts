@@ -1,3 +1,7 @@
 plugins {
-    kotlin("jvm")
+    id("harmonysoft-library-conventions")
+}
+
+dependencies {
+    api(project(":harmonysoft-common"))
 }

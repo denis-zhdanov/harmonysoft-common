@@ -11,5 +11,15 @@ include("harmonysoft-event-bus-test")
 include("harmonysoft-event-bus-guava")
 include("harmonysoft-event-bus-spring")
 
-//include("harmonysoft-http-client")
-//include("harmonysoft-cucumber-http")
+include("harmonysoft-http-client")
+include("harmonysoft-http-client-apache")
+include("harmonysoft-http-client-apache-spring")
+include("harmonysoft-http-client-apache-test")
+include("harmonysoft-http-client-apache-cucumber")
+include("harmonysoft-http-client-apache-cucumber-spring")
+
+
+include("harmonysoft-json-api")
+include("harmonysoft-jackson")
+
+include("harmonysoft-sql")

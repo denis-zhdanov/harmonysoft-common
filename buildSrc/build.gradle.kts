@@ -8,8 +8,9 @@ repositories {
 }
 
 dependencies {
-    implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:1.6.10")
-    implementation("org.springframework.boot:spring-boot-gradle-plugin:2.6.4")
-//    implementation("org.jetbrains.dokka:dokka-gradle-plugin:1.6.10")
-    implementation("io.github.gradle-nexus:publish-plugin:1.1.0")
+    implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:1.7.10")
+    implementation("org.jetbrains.dokka:dokka-gradle-plugin:1.7.10")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.6.4")
+
+    implementation("org.springframework.boot:spring-boot-gradle-plugin:2.7.1")
 }

@@ -5,5 +5,5 @@ plugins {
 dependencies {
     api(project(":harmonysoft-common-test"))
 
-    implementation("io.cucumber:cucumber-java:${Version.CUCUMBER}")
+    api("io.cucumber:cucumber-java:${Version.CUCUMBER}")
 }

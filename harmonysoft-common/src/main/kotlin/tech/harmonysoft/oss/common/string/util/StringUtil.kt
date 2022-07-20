@@ -74,6 +74,6 @@ object StringUtil {
      * ```
      */
     fun toSingleLine(s: String): String {
-        return s.trimIndent().trim().replace(LINE_FEED_REGEX, "")
+        return s.trimIndent().trim().replace(LINE_FEED_REGEX, " ")
     }
 }
