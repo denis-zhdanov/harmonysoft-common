@@ -25,3 +25,4 @@ include("harmonysoft-jackson")
 include("harmonysoft-sql")
 
 include("harmonysoft-micrometer")
+include("harmonysoft-micrometer-influxdb")
