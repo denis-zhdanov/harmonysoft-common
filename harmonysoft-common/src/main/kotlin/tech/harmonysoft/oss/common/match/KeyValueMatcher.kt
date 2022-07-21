@@ -7,5 +7,5 @@ import tech.harmonysoft.oss.common.data.DataProviderStrategy
  */
 interface KeyValueMatcher<KEY> {
 
-    fun <HOLDER> matches(holder: HOLDER, retrivalStrategy: DataProviderStrategy<HOLDER, KEY>)
+    fun <HOLDER> matches(holder: HOLDER, retrivalStrategy: DataProviderStrategy<HOLDER, KEY>): Boolean
 }

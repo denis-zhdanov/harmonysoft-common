@@ -11,4 +11,16 @@ package tech.harmonysoft.oss.common.data
 fun interface DataProviderStrategy<DATA_HOLDER, KEY> {
 
     fun getData(dataHolder: DATA_HOLDER, key: KEY): Any?
+
+    companion object {
+
+        private val MAP = DataProviderStrategy<Map<Any, Any>, Any> { dataHolder, key ->
+            dataHolder[key]
+        }
+
+        @Suppress("UNCHECKED_CAST")
+        fun <KEY> fromMap(): DataProviderStrategy<Map<KEY, Any?>, KEY> {
+            return MAP as DataProviderStrategy<Map<KEY, Any?>, KEY>
+        }
+    }
 }
