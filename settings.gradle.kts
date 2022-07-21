@@ -23,3 +23,5 @@ include("harmonysoft-json-api")
 include("harmonysoft-jackson")
 
 include("harmonysoft-sql")
+
+include("harmonysoft-micrometer")

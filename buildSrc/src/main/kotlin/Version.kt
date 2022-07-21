@@ -15,7 +15,10 @@ object Version {
     const val JACKSON = "2.13.3"
     const val JSQL_PARSER = "4.4"
     const val QUARTZ = "2.3.2"
+    const val MICROMETER = "1.9.2"
+
     const val ASSERTJ = "3.22.0"
     const val JUNIT = "5.8.2"
+    const val MOCKITO_KOTLIN = "4.0.0"
     const val CUCUMBER = "7.4.1"
 }
